@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Syafiqah Lotfiamir</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css"/>
+        
+    </head>
+    
+    <body>
+        <!--homepage start-->
+        <div class="main-page">
+            <div class="text">
+                <h1>Syafiqah Lotfiamir</h1>
+                <h4>A final-year Computer Science student 
+                    that is passionate to learn and explore further in different areas of Computer Science  
+                    and hoping to implement the knowledge and technologies learned to provide efficient solution to client. 
+                    <br><br>
+                    Also likes Frontend stuff a little bit too much.</h4>
+                <br>
+                
+                <!--social media start-->
+                <div class="container-fluid my-3">
+                    <!--github start-->
+                    <!-- <div class="btn-containe">
+                        <button type="button" class="btn github-btn" id="btn-github" title="Github">
+                            <i class="bi bi-github"></i>
+                        </button>
+                    </div> -->
+
+                    <button type="button" class="btn github-btn mx-2" id="btn-github" title="Github">
+                        <i class="bi bi-github"></i>
+                    </button>
+
+                    <!--github end-->
+
+                    <!--linkedin start-->
+                    <!-- <div class="btn-container">
+                        <button type="button" class="btn linkedin-btn" id="btn-linkedin" title="linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </button>
+                    </div> -->
+
+                    <button type="button" class="btn linkedin-btn mx-2" id="btn-linkedin" title="linkedin">
+                        <i class="bi bi-linkedin"></i>
+                    </button>
+
+                    <!--linkedin end-->
+
+                    <!--copy email start-->
+
+                    <!-- <input type="text" value="slpbnn1004@gmail.com" id="email-input">
+                    <div class="btn-container">
+                        <button type="button" class="btn email-btn" id="btn-email" onclick="myFunction()">
+                            <i class="bi bi-envelope"></i> Email
+                        </button>
+                    </div> -->
+                    <input type="text" value="slpbnn1004@gmail.com" id="email-input">
+
+                    <button type="button" class="btn email-btn mx-2" id="btn-email" onclick="myFunction()">
+                        <i class="bi bi-envelope"></i> Email
+                    </button>
+
+
+                    <!--copy email end-->
+
+                    <!--message successfully copied start-->
+                    <div class="my-3" id="success" style="display: none;">
+                        <p>Email Successfully copied!</p>
+                    </div>
+                    <!--message successfully copied end-->
+
+                    <!--dl resume start-->
+
+                    <!-- <div class="btn-container">
+                        <button type="button" class="btn resume-btn" id="btn-resume">
+                            <i class="bi bi-file-earmark-arrow-down"></i>
+                            <a class="dl-resume" href="Nurul_Syafiqah_Binti_Lotfiamir_USM.pdf" download="Syafiqah_Lotfiamir_Resume"> Download My Resume </a>
+                        </button>
+                    </div> -->
+
+                    <!-- <button type="button" class="btn resume-btn mx-2" id="btn-resume">
+                        <i class="bi bi-file-earmark-arrow-down"></i>
+                        <a class="dl-resume" href="Nurul_Syafiqah_Binti_Lotfiamir_USM.pdf" download="Syafiqah_Lotfiamir_Resume"> Download Resume </a>
+                    </button> -->
+
+                    <!--dl resume end-->
+                </div>
+                <!--social media end-->
+                <br>
+
+                <!--button project start-->
+                <button type="button" class="btn main-btn my-3 py-3" id="btn-to-project-page">
+                    Explore My Projects 
+                </button>
+                
+                <!--button project end-->
+            </div>
+        </div>
+        
+        <!--homepage end-->
+
+
+        <!--script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script> -->
+        
+        <script type="text/javascript">
+            
+            document.getElementById("btn-to-project-page").onclick = function(){
+                location.href = "index_project.html";
+            }
+
+            document.getElementById("btn-linkedin").onclick = function () {
+                location.href = "https://www.linkedin.com/in/nurul-syafiqah-lotfiamir-149813193/"; 
+            };
+      
+            document.getElementById("btn-github").onclick = function () {
+                location.href = "https://github.com/piqa000";
+            };
+
+            
+            function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("email-input");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+            
+            /* Alert the copied text */
+            // alert("Successfully copied text: " + copyText.value);
+            }   
+
+            //for the form submission to pop up thank you message
+            var nextStep = document.querySelector('#btn-email');
+            
+            nextStep.addEventListener('click', function (e) {
+                e.preventDefault();
+            
+                // Show message element
+                document.getElementById('success').style.display = 'block';
+            });
+
+        </script>
+        <!-- <script>
+            $(window).on('load', function(){
+                $(".loader-body").fadeOut(3000);
+                $(".main-page").fadeIn(3000);
+            });
+        </script> -->
+
+    </body>
+</html>

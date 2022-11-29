@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Updock&display=swap');
+/*
+#ffffff
+light green: #ADF1B8
+plum-ish?: #735172
+blue medium: #4A41CE
+black-ish: #352F44
+*/
+*
+{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 16px;
+    
+} 
+.main-page{
+    background-image: url("1.png");
+    /* height: 100%; */
+    height: 725px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*modify start*/
+    /* display: none; */
+}
+.text{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+/* .container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ffffff;
+    text-align: center;
+} */
+.btn-container{
+    border: 1px solid #ffffff;
+    width: auto;
+}
+.btn{
+    color: #ffffff;
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    font-weight: 600 !important;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    /* box-shadow: 3px 3px 8px #9fd8d8, inset 0 -3px 8px #9fd8d8; */
+    /* box-shadow: 0 0 13px #9fd8d8; */
+
+}
+
+.btn:hover{
+    box-shadow:
+    inset 0 0 3px #fff,
+    inset 8px 0 15px #5C7899,
+    inset 3px 0 10px #AA9FD8,
+    inset -3px 0 10px #0ff,
+    0 0 15px #9fd8d8,
+    -10px 0 30px #AA9FD8,
+    10px 0 30px #AA9FD8;
+    /* 10px 0 80px #0ff; */
+}
+a{
+    text-decoration: none;
+}
+input{
+    display: none;
+}
+.email-btn:hover, .main-btn:hover, .bi:hover{
+    color: #9fd8d8; /*#8ec7cd #9fd8d8*/
+}
+
+/*Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+    .main-btn:hover{
+        color: #000000;
+    }
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Updock&display=swap');
+*
+/* 
+#5C7899, #8DC5CB, #000000, #7E3759, #2A285C
+*/
+{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #000000;
+} 
+.container, .container-project{
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid #ffffff !important; */
+}
+.project-container{
+    border: 3px solid #ffffff !important;
+    border-radius: 8px;
+    width: 33.33%;
+}
+/* 
+#5C7899, #8DC5CB, #000000, #7E3759, #2A285C     
+#9fd8d8   2A285C(biru tua)  7E3759(plum pekat)  8DC5CB(biru muda)   5C7899(kuat skt dr biru muda)
+*/
+
+/*AA9FD8 - 100 D89F9F - 100 9FD8C1 - 30 */
+.project-container:hover{
+    box-shadow:
+    inset 0 0 20px #fff,
+    inset 20px 0 30px #5C7899,
+    /* inset -20px 0 80px #0ff, */
+    inset 20px 0 100px #AA9FD8, 
+    inset -20px 0 100px #0ff, 
+    0 0 30px #9fd8d8,
+    /* 0 0 50px #fff, */
+    -10px 0 60px #0ff,        
+    /* -10px 0 80px #5C7899,         */
+    10px 0 60px #2A285C;
+    /* 10px 0 80px #0ff; */
+}
+.btn{
+    color: #ffffff;
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    font-weight: 600 !important;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-trigger-modal{
+    background-color: #9fd8d8 !important;
+    color: #000000;
+    padding: 10px !important;
+    border: 1px solid #9fd8d8 !important;
+}
+.modal-content{
+    background-color: #000000;
+    color: #ffffff;
+}
+/* .modal-header .modal-title button .btn-close{
+    color: #ffffff;
+} */
+.project-details-container {
+    border: 1px solid #ffffff;
+}
+.bi{
+    color: #9fd8d8;
+}
+.project-keyword{
+    color: #9fd8d8;
+}
+.bi-file-earmark-code{
+    font-size: 14px;
+}
+.project-keyword{
+    font-size: 13px;
+}
+
+/*media queries start*/
+
+/*Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container-project{
+        display: flex;
+        flex-direction: column;
+    }
+    .landing-text-container, .landing-img-container{
+        border: 1px solid #ffffff !important;
+        width: 100%;
+    }
+    .project-container{
+        border: 1px solid #ffffff !important;
+        border-radius: 8px;
+        width: 100%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and(min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and(min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and(min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and(min-width: 1200px) {
+
+}
